@@ -1,0 +1,16 @@
+.botones{
+    display: flex;
+    gap: 20px;
+    
+    .btn{
+    background-color: $celeste;
+    text-decoration: none;
+    color: $negro;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px dotted $negro;
+    &:hover{
+        background-color: $shadow;
+    }
+}
+}

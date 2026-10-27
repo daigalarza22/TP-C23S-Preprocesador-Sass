@@ -1,0 +1,29 @@
+@mixin circulo($tamano:35px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $tamano;
+    height: $tamano;
+    border: 1px solid $negro;
+    border-radius: 50%;
+    box-shadow: -5px 0 0 $shadow;
+}
+@mixin fondo-celeste($ancho:70%, $alto:50%){
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $ancho;
+        height: $alto;
+        background-color: $celeste;
+        z-index: -1;
+    }
+}
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
